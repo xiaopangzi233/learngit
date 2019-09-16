@@ -1,0 +1,156 @@
+/*滚动条*/
+.scrollTop{
+    background-color: #FFF0DD;
+    color: #F4A64A;
+    font-size: 10px;
+    padding: 2px;
+    
+}
+.main{
+    text-align: center;
+}
+/*图片*/
+.main-img img{
+    margin: 5px 0;
+    width: 92%;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 3px rgb(204, 201, 201);
+    max-width: 450px;
+}
+.main-title h2{
+    padding: 50px 0;
+}
+.main-look{
+    background-color: blue;
+    color: white;
+    width: 120px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 20px;
+}
+.main-look a{
+    text-decoration: none;
+    color: white;
+}
+.main-his{
+font-size: 15px;
+margin-top: 50px;
+}
+.main-hist{
+color: rgb(201, 23, 23);
+font-size: 30px;
+}
+
+.xuanfu{
+    font-size: 0.15rem;
+    position: fixed;
+    right: 1rem;
+    bottom: 10%;
+    text-align: center;
+}
+.xuanfu p{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+.xuanfu a{
+text-decoration: none;
+color: gray;
+}
+
+/*导航栏*/
+.navi{
+    width: 100%;
+    position: fixed;
+    bottom: 1px;
+    padding-top: 10px;
+    border-top:1px solid rgb(216, 209, 209) 
+}
+.navi a{
+    list-style-type: none;
+    float: left;
+    width: 25%;
+    font-size: 10px;
+    text-align: center;
+
+    
+}
+.navi a{
+    text-decoration: none;
+    color: rgb(70, 65, 65);
+}
+
+/*赛事*/
+.saishi{
+    text-align: center;
+    width: 100%;
+    font-size: 0;
+    height: 1rem;
+}
+.saishi h4{
+    font-size: 1.25rem;
+    margin: 0.5rem;
+    text-align: left;
+}
+.saishi span {
+    font-size: .12rem;
+    line-height: 1rem;
+    vertical-align: middle;
+}
+.saishi-title{
+    background-color: rgba(0, 0, 255, 0.103);
+    padding: 0.75rem 0;
+}
+.saishi li{
+    border-bottom: 1px solid rgba(0, 0, 255, 0.295);
+    padding: 0.15rem 0;
+    line-height: 4rem;
+    height: 4rem;
+}
+div span:nth-child(1){
+    display: inline-block;
+    width: 20%;
+}
+div span:nth-child(2){
+    display: inline-block;
+    width: 15%;
+}
+div span:nth-child(3){
+    display: inline-block;
+    width: 15%;
+}
+div span:nth-child(4){
+    display: inline-block;
+    width: 20%;
+}
+div span:nth-child(5){
+    display: inline-block;
+    width: 30%;
+}
+
+/*联系客服页面*/
+.kefu-area{
+    width: 100%;
+    height: 100%;
+
+}
+.kefu-bottom{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    display: none;
+    z-index: 101;
+    bottom: 0;
+}
+.kefu-bottom p{
+    color: red;
+    text-align: center;
+}
+.kefu-bottom img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: block;
+}

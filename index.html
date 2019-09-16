@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+    body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li,pre, 
+form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+    </style>
+    <link rel="stylesheet" href="ball.css">
+</head>
+<body>
+    <div class="scrollTop">
+        <marquee behavior="" direction="left" scrollamount="10" >本信息仅供体育平台主播，足球分析师，等体育爱好者参考浏览
+            任何人不得用于非法用途，否则后果自负，请勿违反国家法律规定
+        </marquee>
+    </div>
+    <div class="main">
+        <div class="main-img"><a href="#"><img src="AIgunqiu.png" alt="AI滚球大师"></a></div>
+        <div class="main-title"><h2>9月10日 重点赛事</h2></div>
+        <button type="button" onclick="$('.main').hide();$('.saishi').show()"><div class="main-look">免费查看</div></button>
+        <div class="main-his">历史命中率</div>
+        <div class="main-hist"><b>76.00%</b></div>
+    </div>
+    <div class="saishi" style="display: none;">
+        <h4>9月16日重点赛事推荐</h4>
+        <div class="saishi-title"><span>足彩</span><span>赛事</span><span>时间</span><span>队伍</span><span>推荐</span></div>
+        <ul>
+            <li>
+                <span>重点赛事</span>
+                <span>瑞典超</span>
+                <span>01:00</span>
+                <span>佐加顿斯<br>vs<br>赫尔辛堡</span>
+                <span>全场大2.5</span>
+            </li>
+            <li>
+                <span>重点赛事</span>
+                <span>保超</span>
+                <span>01:00</span>
+                <span>贝尔罗<br>vs<br>维多萨</span>
+                <span>主队让1.5胜</span>
+            </li>
+        </ul>
+    </div>
+    <div class="xuanfu">
+        <a class="kefu" href="">
+            <img src="1.jpg" alt="">
+            <p>联系客服</p>
+        </a>
+        <a class="jilu" href="">
+            <img src="2.jpg" alt="">
+            <p>往期记录</p>
+        </a>
+        <a class="tongzhi" href="">
+            <img src="3.jpg" alt="">
+            <p>开启通知</p>
+        </a>
+        <a class="chongzhi" href="">
+            <img src="4.jpg" alt="">
+            <p>充值米币</p>
+        </a>
+    </div>
+    <div class="navi">
+        <a href="" class="tabbar-item tabbar-item-1 active">
+            <img src="1.jpg" active_src="/Content/images/tabbar-active-1.png">
+            <p>重点赛事</p>
+        </a>
+        <a href="" class="tabbar-item tabbar-item-2">
+            <img src="2.jpg" active_src="/Content/images/tabbar-active-2.png">
+            <p>滚球</p>
+        </a>
+        <a href="" class="tabbar-item tabbar-item-4">    
+            <img src="3.jpg" active_src="/Content/images/tabbar-active-ai.png">
+            <p>AI滚球大师</p>
+        </a>
+        <a href="" class="tabbar-item tabbar-item-3">
+            <img src="4.jpg" active_src="/Content/images/tabbar-active-3.png">
+            <p>我的</p>
+        </a>
+    </div>
+    <div class="kefu-area" id="kefu-area">
+        <div class="kefu-bottom" id="kefu-bottom">
+            <p>长按二维码识别，添加客服微信号</p>
+            <img src="erweima.jpg" alt="">
+        </div>
+        <div id="shadow"></div>
+    </div>
+</body>
+</html>
