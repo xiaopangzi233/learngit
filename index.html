@@ -24,7 +24,7 @@ form, fieldset, legend, button, input, textarea, th, td {
     <div class="main">
         <div class="main-img"><a href="#"><img src="AIgunqiu.png" alt="AI滚球大师"></a></div>
         <div class="main-title"><h2>9月10日 重点赛事</h2></div>
-        <button type="button" onclick="$('.main').hide();$('.saishi').show()"><div class="main-look">免费查看</div></button>
+        <button class="main-look-btn" type="button" onclick="$('.main').hide();$('.saishi').show()">免费查看</button>
         <div class="main-his">历史命中率</div>
         <div class="main-hist"><b>76.00%</b></div>
     </div>
@@ -91,5 +91,16 @@ form, fieldset, legend, button, input, textarea, th, td {
         </div>
         <div id="shadow"></div>
     </div>
+    <script>
+        $(".kefu").click(function(){
+            $("#shadow").css("display","block");
+            $(".kefu-bottom").slideDown();
+            return false;
+        });
+        $("#shadow").click(function(){
+            $("#shadow").css("display","none");
+            $(".kefu-bottom").css("display","none");
+        });
+    </script>
 </body>
 </html>
