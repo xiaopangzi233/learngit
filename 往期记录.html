@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+    body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li,pre, 
+    form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+    }
+    </style>
+    <link rel="stylesheet" href="ball.css">
+</head>
+<body>
+    <div class="wangqi" id="wangqi">
+        <span class="on">重点赛事</span>
+        <span>滚球</span>
+        <span>强力赛事</span>
+        <div class="content">
+            <div class="saishi" class="wangqi-saishi">
+                <h4>9月16日重点赛事推荐</h4>
+                <div class="saishi saishi-title"><span>足彩</span><span>赛事</span><span>时间</span><span>队伍</span><span>推荐</span></div>
+                <ul>
+                    <li>
+                        <span>重点赛事</span>
+                        <span>瑞典超</span>
+                        <span>01:00</span>
+                        <span>佐加顿斯<br>vs<br>赫尔辛堡</span>
+                        <span>全场大2.5</span>
+                    </li>
+                    <li>
+                        <span>重点赛事</span>
+                        <span>保超</span>
+                        <span>01:00</span>
+                        <span>贝尔罗<br>vs<br>维多萨</span>
+                        <span>主队让1.5胜</span>
+                    </li>
+                </ul>
+                </div>
+            <div class="hide">
+                <div class="saishi" class="wangqi-saishi">
+                <h4>9月16日重点赛事推荐</h4>
+                <div class="saishi saishi-title"><span>足彩</span><span>赛事</span><span>时间</span><span>队伍</span><span>推荐</span></div>
+                <ul>
+                    <li>
+                        <span>重点赛事</span>
+                        <span>瑞典超</span>
+                        <span>01:00</span>
+                        <span>佐加顿斯<br>vs<br>赫尔辛堡</span>
+                        <span>全场大2.5</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="hide">
+                <div class="saishi" class="wangqi-saishi">
+                    <h4>9月16日重点赛事推荐</h4>
+                    <div class="saishi saishi-title"><span>足彩</span><span>赛事</span><span>时间</span><span>队伍</span><span>推荐</span></div>
+                    <ul>
+                        <li>
+                            <span>重点赛事</span>
+                            <span>保超</span>
+                            <span>01:00</span>
+                            <span>贝尔罗<br>vs<br>维多萨</span>
+                            <span>主队让1.5胜</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // $(".wangqi").on("click","span",function(){
+        //     $(this).addClass("on").siblings("span").removeClass("on");
+        // });
+        $(".wangqi>span").click(function(){
+            $(this).addClass("on").siblings().removeClass("on");
+            var index=$(this).index();
+            $(".content>div").eq(index).show().siblings().hide();
+        })
+    </script>
+</body>
+</html>
