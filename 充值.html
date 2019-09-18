@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>米币充值</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+    body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li,pre, 
+    form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+    }
+    body{
+        background-color: rgba(128, 128, 128, 0.164);
+    }
+    </style>
+    <link rel="stylesheet" href="ball.css">
+</head>
+<body class="chongzhi">
+    <div class="mibi">
+        <span class="blue-white">10米币<br>售价10.00元</span>
+        <span>100米币<br>售价100.00元</span>
+        <span>500米币<br>售价500.00元</span>
+    </div>
+    <button>立即支付</button>
+    <p>仅微信支付</p>
+    <script>
+        $(".mibi>span").click(function(){
+            $(this).css({"background":"blue","color":"white"}).siblings().removeAttr("style")
+        })
+    </script>
+</body>
+</html>

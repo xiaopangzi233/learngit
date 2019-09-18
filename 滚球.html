@@ -21,21 +21,43 @@ form, fieldset, legend, button, input, textarea, th, td {
             任何人不得用于非法用途，否则后果自负，请勿违反国家法律规定
         </marquee>
     </div>
-    
+    <div class="main">
+        <div class="main-img"><a href="#"><img src="AIgunqiu.png" alt="AI滚球大师"></a></div>
+        <div class="main-title">
+            <h3>9月10日 滚球推荐</h3>
+            <p>每天推送10-30条讯息</p>
+            <p>价值<span style="color: blue">30</span>米币</p>
+        </div>
+        <button class="main-look-btn gunqiu-btn" type="button" onclick="$('.gunqiu-jiesuo').show();$('.gunqiu-shadow').show()">解锁</button>
+        <p class="gunqiu-mingzhonglv"><span style="color: rgb(207, 60, 60)">命中419场/</span>总共655场</p>
+    </div>
+    <div class="saishi" style="display: none;">
+        <p class="saishi-shuoming">说明：1.出现在列表中的赛事，表示该场次至少还有一个进球；2.进球数展示的是 提示之后 该场次的进球数量；3.云端计算，大数据推荐，仅供参开。<br><b>4.滚球比赛会不定时更新，当天只需解锁一次，即可全天查看比赛推荐</b></p>
+        <h4>9月16日重点赛事推荐</h4>
+        <div class="saishi saishi-title"><span>足彩</span><span>赛事</span><span>时间</span><span>队伍</span><span>推荐</span></div>
+        <ul>
+            <li>
+                <span>重点赛事</span>
+                <span>瑞典超</span>
+                <span>01:00</span>
+                <span>佐加顿斯<br>vs<br>赫尔辛堡</span>
+                <span>全场大2.5</span>
+            </li>
+            <li>
+                <span>重点赛事</span>
+                <span>保超</span>
+                <span>01:00</span>
+                <span>贝尔罗<br>vs<br>维多萨</span>
+                <span>主队让1.5胜</span>
+            </li>
+        </ul>
+    </div>
     <div class="xuanfu">
         <a class="kefu" href="">
             <img src="1.jpg" alt="">
             <p>联系客服</p>
         </a>
-        <a class="jilu" href="">
-            <img src="2.jpg" alt="">
-            <p>往期记录</p>
-        </a>
-        <a class="tongzhi" href="">
-            <img src="3.jpg" alt="">
-            <p>开启通知</p>
-        </a>
-        <a class="chongzhi" href="">
+        <a class="chongzhi" href="充值.html">
             <img src="4.jpg" alt="">
             <p>充值米币</p>
         </a>
@@ -58,5 +80,36 @@ form, fieldset, legend, button, input, textarea, th, td {
             <p>我的</p>
         </a>
     </div>
+    <div class="kefu-area" id="kefu-area">
+        <div class="kefu-bottom" id="kefu-bottom">
+            <p>长按二维码识别，添加客服微信号</p>
+            <img src="erweima.jpg" alt="">
+        </div>
+        <div id="shadow"></div>
+    </div>
+    <div class="gunqiu-jiesuo">
+        <p>是否消耗30米币解锁</p>
+        <div class="gunqiu-jiesuo-flex">
+            <span onclick="$('.gunqiu-shadow,.gunqiu-jiesuo').hide();">取消</span>
+            <span style="color: blue" onclick="$('.saishi').show();$('.gunqiu-jiesuo,.gunqiu-shadow,.main').hide()">确定</span>
+        </div>
+    </div>
+    <div class="gunqiu-shadow"></div>
+    <script>
+        $(".kefu").click(function(){
+            $("#shadow").css("display","block");
+            $(".kefu-bottom").slideDown();
+            return false;
+        });
+        $("#shadow").click(function(){
+            $("#shadow").css("display","none");
+            $(".kefu-bottom").css("display","none");
+        });
+        //滚球遮罩层
+        $(".gunqiu-shadow").click(function(){
+            $(".gunqiu-shadow").hide();
+            $(".gunqiu-jiesuo").hide();
+        })
+    </script>
 </body>
 </html>
